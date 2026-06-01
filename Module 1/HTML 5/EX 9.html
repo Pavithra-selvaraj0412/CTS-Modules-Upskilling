@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Location</title>
+
+<script>
+function find() {
+    navigator.geolocation.getCurrentPosition(show, error, 
+    {enableHighAccuracy:true, timeout:5000});
+}
+
+function show(pos) {
+    document.getElementById("res").innerHTML =
+    "Lat: " + pos.coords.latitude + 
+    "<br>Lon: " + pos.coords.longitude;
+}
+
+function error(e) {
+    if(e.code==1) alert("Permission denied");
+    else if(e.code==3) alert("Timeout");
+}
+</script>
+
+</head>
+
+<body>
+
+<button onclick="find()">Find Nearby Events</button>
+
+<p id="res"></p>
+
+</body>
+</html>

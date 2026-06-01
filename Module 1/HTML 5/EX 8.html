@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Preferences</title>
+
+<script>
+// Save selected event in localStorage
+function savePreference() {
+    let event = document.getElementById("event").value;
+    localStorage.setItem("eventType", event);
+}
+
+// Load saved value on page load
+function loadPreference() {
+    let saved = localStorage.getItem("eventType");
+    if (saved) {
+        document.getElementById("event").value = saved;
+    }
+}
+
+// Clear storage
+function clearData() {
+    localStorage.clear();
+    sessionStorage.clear();
+    alert("Preferences Cleared");
+}
+</script>
+
+</head>
+
+<body onload="loadPreference()">
+
+<h2>Select Event</h2>
+
+<select id="event" onchange="savePreference()">
+    <option value="">Select</option>
+    <option>Workshop</option>
+    <option>Seminar</option>
+    <option>Cultural</option>
+</select>
+
+<br><br>
+
+<button onclick="clearData()">Clear Preferences</button>
+
+</body>
+</html>

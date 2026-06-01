@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+</head>
+
+<body>
+
+    <h2>Event Feedback Form</h2>
+    <label>Phone Number:</label><br>
+    <input type="text"
+           onblur="alert('Phone number validated')">
+    <br><br>
+    <label>Select Event:</label><br>
+    <select onchange="fee.value='Event Fee: ₹500'">
+        <option>Select</option>
+        <option>Music Event</option>
+        <option>Sports Event</option>
+    </select>
+
+    <output name="fee"></output>
+    <br><br>
+    <img src="event.jpg"
+         width="100"
+         ondblclick="this.width='200'">
+    <br><br>
+
+    <label>Feedback:</label><br>
+    <textarea id="feedback"     onkeyup="document.getElementById('count').innerHTML=this.value.length">
+    </textarea>
+
+    Characters:
+    <output name="count">0</output>
+    <br><br>
+    <button onclick="alert('Feedback Submitted')">
+        Submit
+    </button>
+
+</body>
+
+</html>

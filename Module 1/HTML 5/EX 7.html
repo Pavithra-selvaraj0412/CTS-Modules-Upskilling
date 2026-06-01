@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Promo Video</title>
+</head>
+
+<body onbeforeunload="return 'Form is not completed'">
+
+    <h2>Event Promo Video</h2>
+
+    <video width="400"
+           controls
+           oncanplay="alert('Video ready to play')">
+
+        <source src="event.mp4" type="video/mp4">
+
+    </video>
+
+    <br><br>
+
+    <form>
+        Name:
+        <input type="text">
+    </form>
+
+</body>
+
+</html>

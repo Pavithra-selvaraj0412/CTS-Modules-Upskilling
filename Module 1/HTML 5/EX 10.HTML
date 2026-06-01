@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Debug Example</title>
+
+<script>
+function test() {
+    let a = 10;
+    let b = 0;
+    
+    console.log("A value:", a);
+    console.log("B value:", b);
+
+    let result = a / b;   // error situation (division by 0)
+
+    console.log("Result:", result);
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Debugging Example</h2>
+
+<button onclick="test()">Run</button>
+
+</body>
+</html>
