@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body{
+            background-color: #f5f5f5;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color:red;">
+        Local Community Event Portal
+    </h1>
+
+    <h2 class="subheading">
+        Upcoming Community Events
+    </h2>
+
+    <p>
+        Welcome to our community event portal.
+    </p>
+
+    <button class="register-btn">
+        Register Now
+    </button>
+
+</body>
+</html>

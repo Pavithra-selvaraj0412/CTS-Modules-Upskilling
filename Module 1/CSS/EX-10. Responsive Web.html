@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Design</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: lightblue;
+        }
+
+        nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            width: 30%;
+        }
+
+        h1 {
+            font-size: 3vw;
+            text-align: center;
+        }
+
+        /* Media Query */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            img {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 5vw;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h1>Community Portal</h1>
+
+    <div style="text-align:center;">
+        <img src="https://via.placeholder.com/300">
+    </div>
+
+</body>
+</html>

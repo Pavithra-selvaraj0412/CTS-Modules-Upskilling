@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Styling</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2 style="text-align:center;">Event Table</h2>
+
+    <table>
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Music Fest</td>
+            <td>June 10</td>
+        </tr>
+        <tr>
+            <td>Food Fair</td>
+            <td>June 15</td>
+        </tr>
+        <tr>
+            <td>Art Show</td>
+            <td>June 20</td>
+        </tr>
+    </table>
+
+</body>
+</html>

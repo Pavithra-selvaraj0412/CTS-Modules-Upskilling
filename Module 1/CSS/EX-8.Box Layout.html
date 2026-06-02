@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model</title>
+
+    <style>
+        .eventCard {
+            border: 2px solid black;
+            padding: 15px;
+            margin: 15px;
+            width: 200px;
+        }
+
+        input:focus {
+            outline: 2px solid red;
+        }
+
+        .hiddenBox {
+            visibility: hidden;
+        }
+
+        .noneBox {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="eventCard">Music Event</div>
+    <div class="eventCard">Food Festival</div>
+
+    <h3>Form</h3>
+    <input type="text" placeholder="Enter name">
+
+    <p class="hiddenBox">This is hidden (space kept)</p>
+    <p class="noneBox">This is none (no space)</p>
+
+</body>
+</html>

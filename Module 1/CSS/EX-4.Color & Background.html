@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color & Background Styling</title>
+
+    <style>
+        /* Body background with image + fallback color */
+        body {
+            background-color: #f0f0f0; /* fallback */
+            background-image: url("https://via.placeholder.com/800");
+            background-size: cover;
+            font-family: Arial;
+        }
+
+        /* Main header using HEX color */
+        #mainHeader {
+            color: #ffffff;
+            background-color: #333333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Section header with gradient */
+        h2 {
+            background: linear-gradient(to right, blue, lightblue);
+            color: white;
+            padding: 8px;
+        }
+
+        /* Event card using RGBA */
+        .eventCard {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* Text color */
+        p {
+            color: #000000;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="mainHeader">City Council Events</h1>
+
+    <h2>Upcoming Events</h2>
+
+    <div class="eventCard">
+        <p>Music Festival</p>
+    </div>
+
+    <div class="eventCard">
+        <p>Food Carnival</p>
+    </div>
+
+</body>
+</html>
